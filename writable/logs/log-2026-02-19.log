@@ -1,0 +1,484 @@
+DEBUG - 2026-02-19 18:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 18:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-19 18:30:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:30:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+DEBUG - 2026-02-19 18:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-19 18:42:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:42:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-02-19 18:42:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:42:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+ERROR - 2026-02-19 18:51:00 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:51:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+DEBUG - 2026-02-19 18:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-19 18:51:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:51:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+DEBUG - 2026-02-19 18:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 18:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-19 18:51:24 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:51:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+DEBUG - 2026-02-19 18:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 18:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-19 18:52:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:52:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+DEBUG - 2026-02-19 18:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 18:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 18:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-19 18:55:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:55:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+DEBUG - 2026-02-19 18:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-19 18:56:41 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:56:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+DEBUG - 2026-02-19 18:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-02-19 18:57:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-02-19 18:57:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'c18root'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php(201): mysqli->real_connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#6 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES) in /var/www/clients/client18/web38/web/Projekt/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/clients/client18/web38/web/Projekt/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 /var/www/clients/client18/web38/web/Projekt/system/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/clients/client18/web38/web/Projekt/system/BaseModel.php(713): CodeIgniter\Model->doFirst()
+#5 /var/www/clients/client18/web38/web/Projekt/app/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+#6 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+#7 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/clients/client18/web38/web/Projekt/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /var/www/clients/client18/web38/web/Projekt/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 /var/www/clients/client18/web38/web/Projekt/index.php(59): CodeIgniter\Boot::bootWeb()
+#12 {main}
+CRITICAL - 2026-02-19 18:57:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'2a02:2b88:2:1::4aba:1' (using password: YES)
+[Method: POST, Route: login]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(654): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(296): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(713): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Controllers/Projekt.php(70): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Projekt->loginProcess()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
